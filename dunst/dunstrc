@@ -1,0 +1,91 @@
+[global]
+    ### GEOMETRÍA ZEN ###
+    monitor = 0
+    follow = none
+    
+    # Un poco más ancha para elegancia (320px)
+    width = (200, 320)
+    height = (180, 300)
+    origin = top-center
+    offset = (0, 60)
+    
+    scale = 0
+    notification_limit = 5
+
+    ### APARIENCIA SUAVE ###
+    # Sin barra de progreso (Minimalismo total) o muy fina
+    progress_bar = true
+    progress_bar_height = 2
+    progress_bar_frame_width = 0
+    progress_bar_min_width = 150
+    progress_bar_max_width = 300
+
+    transparency = 0
+    
+    # Más espacio interno (Padding) = Más sensación Zen
+    padding = 16
+    horizontal_padding = 16
+    text_icon_padding = 16
+    
+    # Borde de 2px sólido
+    frame_width = 2
+    gap_size = 10
+    separator_color = frame
+    
+    # Curvatura pronunciada (12px) para suavidad extrema
+    corner_radius = 12
+
+    ### TEXTO TRANQUILO ###
+    # Usamos 'Light' o 'Regular' en vez de Medium/Bold para calmar la vista
+    # Si no tienes 'Light', usa la normal. Tamaño 10 es buen balance.
+    font = Lilex 10
+
+    line_height = 6
+    markup = full
+    
+    # Formato limpio: Título y cuerpo
+    format = "<b>%s</b>\n%b"
+    
+    alignment = left
+    vertical_alignment = center
+    ellipsize = middle
+    ignore_newline = no
+    stack_duplicates = true
+    show_indicators = no
+
+    ### ICONOS SIMBÓLICOS ###
+    enable_recursive_icon_lookup = no
+    icon_theme = "gnome"
+    icon_position = left
+    min_icon_size = 48
+    max_icon_size = 48
+    text_icon_padding = 20
+
+    ### MOUSE ###
+    mouse_left_click = close_current
+    mouse_middle_click = do_action, close_current
+    mouse_right_click = close_all
+
+# --- PALETA NATURE PASTEL ---
+
+[urgency_low]
+    background = "#151515"
+    foreground = "#867970" # Gris Piedra
+    frame_color = "#32302f"
+    timeout = 3
+	new_icon = ~/.config/dunst/icons/low.png
+
+[urgency_normal]
+    background = "#151515"
+    foreground = "#d4be98" # Beige/Arena (Lectura relajada)
+    # Borde Menta Salvia (#8daf87) - Tu color Zen principal
+    frame_color = "#8daf87" 
+    timeout = 3
+	new_icon = ~/.config/dunst/icons/normal.png
+
+[urgency_critical]
+    background = "#151515"
+    foreground = "#fbf1c7"
+    frame_color = "#d67b76"
+    timeout = 3
+	new_icon = ~/.config/dunst/icons/critical.png

@@ -1,0 +1,64 @@
+# Global settings
+[global]
+    # Appearance
+    font = "Hack 12"
+    alignment = center
+    line_height = 0
+    separator_height = 2
+    padding = 8
+    horizontal_padding = 8
+    separator_color = "#585858"
+    frame_width = 1
+    frame_color = "#282828"
+    transparency = 0
+
+    # Behavior
+    sort = yes
+    indicate_hidden = yes
+    stack_duplicates = true
+    sticky_history = yes
+    follow = mouse
+    ignore_newline = no
+    word_wrap = yes
+    startup_notification = false
+
+    # Notifications
+    markup = full
+    format = "<b>%s</b>\n%b"
+    show_age_threshold = 60
+    bounce_freq = 0
+    idle_threshold = 120
+
+    # Geometry and positioning
+    geometry = "200x5-6+30"
+    monitor = 0
+
+    # Icons
+    icon_folders = /usr/share/icons/breeze/apps/48/:/usr/share/icons/breeze/actions/48/:/usr/share/icons/breeze/places/48/:/usr/share/icons/breeze/status/48/
+    # icon_position = left  # Uncomment to enable left icon positioning
+
+    # Browser for URLs
+    browser = /usr/bin/firefox -new-tab
+
+# Keyboard shortcuts
+[shortcuts]
+    close = ctrl+space
+    close_all = ctrl+shift+space
+    history = ctrl+grave
+    context = ctrl+shift+period
+
+# Urgency levels
+[urgency_low]
+    background = "#1D282828"
+    foreground = "#ebdbb2"
+    timeout = 5
+
+[urgency_normal]
+    background = "#1D282828"
+    foreground = "#ebdbb2"
+    timeout = 10
+
+[urgency_critical]
+    background = "#1D282828"
+    foreground = "#ebdbb2"
+    timeout = 20
